@@ -20,7 +20,7 @@ You need this fonts installed:
 1-Install i3blocks with this command:
 <pre>yaourt -S i3blocks</pre>
 
-2-Put ".i3blocks.conf" in /home/$USER then restart I3wm with $mod+shift+r
+2-Put ".i3blocks.conf" in "/home/$USER" then restart I3wm with "$mod+shift+r"
 <hr>
 <b>Packages you need</b>
 <br>
