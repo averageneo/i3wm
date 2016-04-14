@@ -22,7 +22,8 @@ You need this fonts installed:
 
 2-Put ".i3blocks.conf" in /home/$USER then restart I3wm with $mod+shift+r
 <hr>
-<b>Packages you need:</b>
+<b>Packages you need</b>
+<br>
 Use this command to install necessary:
 <pre>sudo pacman -S feh scrot compton</pre>
 <b>Note:</b> Do not forget to change the background address from "config" file source.
