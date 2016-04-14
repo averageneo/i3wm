@@ -18,3 +18,6 @@ You need this fonts installed:
 <pre>yaourt -S i3blocks</pre>
 
 2-Put .i3blocks.conf in /home/$USER then restart I3wm with $mod+shift+r
+<hr>
+<b>Picture:</b>
+<center>someting</center>
