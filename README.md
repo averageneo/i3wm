@@ -11,9 +11,10 @@ You need this fonts installed:
 <br>
 4- Anonymous pro
 <hr>
-#I3blocks 
+
+<b>I3blocks</b>
 
 1-Install i3blocks with this command:
 <pre>yaourt -S i3blocks</pre>
 
-2-Puts i3blocks.conf. in /home/$USER then restart I3wm with $mod+shift+r
+2-Put .i3blocks.conf in /home/$USER then restart I3wm with $mod+shift+r
