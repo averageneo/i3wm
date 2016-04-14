@@ -8,3 +8,8 @@ You need this fonts installed:
 2- AIcons
 <br>
 3- icons
+<hr>
+#I3blocks 
+Install i3blocks with this command:
+<pre>yaourt -S i3blocks</pre>
+
