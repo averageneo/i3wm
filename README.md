@@ -25,4 +25,5 @@ Use this command to install necessary:
 <b>Note:</b> Do not forget to change the background address from "config" file source.
 <hr>
 <b>Picture:</b>
+<br>
 ![alt tag](http://hosseinws.ir/wp-content/uploads/2016/04/2016-04-13-070259_1366x768_scrot.png "Arch Linux + I3wm")
