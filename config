@@ -23,8 +23,9 @@ font pango:Anonymus Pro 10
 
 
 # Programs run as which Workspace
-assign [class="/home/hossein/Telegram/Telegram"] $workspace1
-assign [class="xfce4-terminal"] $workspace2
+assign [class="Telegram"] $workspace1
+assign [class="Spyder"] $workspace3
+assign [class="VirtualBox"] $workspace5
 
 
 
