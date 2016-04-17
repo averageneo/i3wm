@@ -1,7 +1,7 @@
 # I3wm
 I3wm customized with i3blocks on arch Linux
 
-![alt tag](http://hosseinws.ir/wp-content/uploads/2016/04/2016-04-13-070259_1366x768_scrot.png "Arch Linux + I3wm")
+![alt tag](http://s7.picofile.com/file/8247607018/2016_04_17_065559_1366x768_scrot.png "Arch Linux + I3wm")
 
 
 You need this fonts installed:
