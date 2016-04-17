@@ -6,15 +6,15 @@ set $mod Mod4
 
 
 # Font
-font pango:Anonymus Pro 10
+font pango:Comic Sans MS 10
 
 # Work spaces VAR
-  set $workspace1 "1: Telegram "
-  set $workspace2 "2: Terminal "
+  set $workspace1 "1: Telegram "
+  set $workspace2 "2: Browser "
   set $workspace3 "3: Coding "
   set $workspace4 "4: FileManager "
   set $workspace5 "5: VirtualMachine  "
-  set $workspace6 "6"
+  set $workspace6 "6: Media "
   set $workspace7 "7"
   set $workspace8 "8"
   set $workspace9 "9"
@@ -24,17 +24,19 @@ font pango:Anonymus Pro 10
 
 # Programs run as which Workspace
 assign [class="Telegram"] $workspace1
+assign [class="Firefox"] $workspace2
 assign [class="Spyder"] $workspace3
+assign [class="Thunar"] $workspace4
 assign [class="VirtualBox"] $workspace5
-
-
+assign [class="Vlc"] $workspace6
 
 # Floating modifier
 floating_modifier $mod
 
 
 # Terminal emulater
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec urxvt -bg grey17 -fg grey67 -fn "xft:Mono Space:pixelsize=16" +sb -depth 32 -pr white -uc -bc -sl 100000
+
 
 
 # Kill
@@ -43,8 +45,8 @@ bindsym $mod+Shift+q kill
 
 # Launcher
 bindsym $mod+d exec dmenu_run -i
-bindsym $mod+Shift+f exec rofi -show run -lines 5 -eh 2 -width 1366 -padding 300 -opacity 85 -bw 30 -bc "#2f343f" -bg "#2f343f" -fg "#f2f1f4" -hlbg "#2f343f" -hlfg "#887AAC" -font "System San Francisco Display 12"
-
+bindsym $mod+Shift+f exec rofi -show run -lines 6 -eh 2 -width 1366 -padding 300 -opacity 80 -bw 30 -bc "#2f343f" -bg "#2f343f" -fg "#f2f1f4" -hlbg "#2f343f" -hlfg "#887AAC" -font "Comic Sans MS 12"
+#ff0000
 # Change focus
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -80,6 +82,9 @@ bindsym $mod+e layout toggle split
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
+
+# lock
+bindsym $mod+i exec i3lock-fancy
 
 
 # Toggle tiling / floating
@@ -163,7 +168,7 @@ bindsym $mod+r mode "resize"
 
 # Bar...
 bar {
-    font pango:Droid Sans Fallback 11
+    font pango:Comic Sans MS 10
     
     colors {
         background #000000
@@ -179,10 +184,9 @@ bar {
 
     strip_workspace_numbers yes
     separator_symbol "❮"
-    
     # !REQUIRES i3blocks
     status_command i3blocks
-
+    position top
 }
 
 
@@ -198,11 +202,11 @@ exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-fill /zknd_photo108.jpg 
 exec --no-startup-id setxkbmap -layout us,ir -option 'grp:alt_shift_toggle'
 exec_always compton -b
-
-
+exec --no-startup-id parcellite
+exec --no-startup-id jupyter-notebook
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set 'Master' 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set 'Master' 5%-
+bindsym XF86AudioMute exec --no-startup-id amixer set 'Master' mute
 
